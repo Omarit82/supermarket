@@ -47,11 +47,12 @@ The API will be available at: http://localhost:8080
 ### Project Structure
 
 src/main/java/com/webapp/supermecado/
-    -   controller/    # REST Endpoints
-    -   service/       # Business Logic
-    -   repository/    # Data Access
-    -   model/         # JPA Entities
-    -   dto/           # Data Transfer Objects
+
+    - controller/    # REST Endpoints
+    - service/       # Business Logic
+    - repository/    # Data Access
+    - model/         # JPA Entities
+    - dto/           # Data Transfer Objects
 
 ### Contact
 If you have any questions about this project, feel free to reach out:
