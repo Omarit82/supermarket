@@ -20,10 +20,11 @@ public class SaleController {
     public ResponseEntity<String> getSales(){
         return ResponseEntity.status(200).body("Sales: "+service.getSales());
     }
+
     @PostMapping("api/sales")
     public ResponseEntity<String> postSales(@RequestBody Sale sale){
         Sale ss = service.postSale(sale);
-        return ResponseEntity.status(201).body("Sale created ");
+        return ResponseEntity.status(201).body("Sale created "+ss.getId_sale());
     }
     @PutMapping("api/sales")
     public ResponseEntity<String> putSales(@RequestBody Sale sale){
